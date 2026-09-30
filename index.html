@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grand Horizon Hotel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            Grand Horizon
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#booking" class="nav-btn">Book Now</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            WELCOME TO GRAND HORIZON
+        </p>
+
+        <h1>
+            Experience Luxury<br>
+            & Comfort
+        </h1>
+
+        <p>
+            Enjoy a memorable stay with world-class
+            hospitality and beautiful rooms.
+        </p>
+
+        <a href="#rooms" class="btn">
+            Explore Rooms
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ROOMS ================= -->
+
+<section id="rooms" class="section">
+
+    <div class="section-heading">
+
+        <p>OUR ACCOMMODATION</p>
+
+        <h2>
+            Choose Your Perfect Room
+        </h2>
+
+        <span>
+            Comfortable rooms with modern facilities
+            for an unforgettable stay.
+        </span>
+
+    </div>
+
+
+    <div class="room-container">
+
+        <!-- Deluxe -->
+
+        <div class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+                alt="Deluxe Room">
+
+            <div class="room-info">
+
+                <h3>Deluxe Room</h3>
+
+                <p>
+                    A comfortable and elegant room
+                    perfect for couples and business travelers.
+                </p>
+
+                <div class="facilities">
+                    <span>Wi-Fi</span>
+                    <span>AC</span>
+                    <span>TV</span>
+                    <span>Breakfast</span>
+                </div>
+
+                <div class="room-bottom">
+
+                    <strong>
+                        ₹4,500
+                        <small>/ night</small>
+                    </strong>
+
+                    <button
+                        onclick="selectRoom('Deluxe Room')">
+                        Book
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Executive -->
+
+        <div class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+                alt="Executive Room">
+
+            <div class="room-info">
+
+                <h3>Executive Room</h3>
+
+                <p>
+                    Spacious accommodation with premium
+                    facilities for business and leisure.
+                </p>
+
+                <div class="facilities">
+                    <span>Wi-Fi</span>
+                    <span>King Bed</span>
+                    <span>AC</span>
+                    <span>Mini Bar</span>
+                </div>
+
+                <div class="room-bottom">
+
+                    <strong>
+                        ₹6,500
+                        <small>/ night</small>
+                    </strong>
+
+                    <button
+                        onclick="selectRoom('Executive Room')">
+                        Book
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Luxury -->
+
+        <div class="room-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+                alt="Luxury Suite">
+
+            <div class="room-info">
+
+                <h3>Luxury Suite</h3>
+
+                <p>
+                    Experience premium luxury with a
+                    spacious living area and beautiful views.
+                </p>
+
+                <div class="facilities">
+                    <span>Wi-Fi</span>
+                    <span>King Bed</span>
+                    <span>Jacuzzi</span>
+                    <span>Room Service</span>
+                </div>
+
+                <div class="room-bottom">
+
+                    <strong>
+                        ₹9,500
+                        <small>/ night</small>
+                    </strong>
+
+                    <button
+                        onclick="selectRoom('Luxury Suite')">
+                        Book
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="section light">
+
+    <div class="section-heading">
+
+        <p>HOTEL FACILITIES</p>
+
+        <h2>
+            Our Services
+        </h2>
+
+    </div>
+
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <div class="service-icon">🍽️</div>
+            <h3>Restaurant</h3>
+            <p>
+                Delicious local and international cuisine.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏊</div>
+            <h3>Swimming Pool</h3>
+            <p>
+                Relax and refresh in our beautiful pool.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🧖</div>
+            <h3>Spa & Wellness</h3>
+            <p>
+                Enjoy relaxing spa and wellness treatments.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📶</div>
+            <h3>Free Wi-Fi</h3>
+            <p>
+                High-speed internet available throughout
+                the hotel.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🚗</div>
+            <h3>Airport Transfer</h3>
+            <p>
+                Comfortable airport pickup and drop-off.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🧹</div>
+            <h3>Housekeeping</h3>
+            <p>
+                Professional daily housekeeping service.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery" class="section">
+
+    <div class="section-heading">
+
+        <p>OUR GALLERY</p>
+
+        <h2>
+            Explore Grand Horizon
+        </h2>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+            alt="Hotel">
+
+        <img
+            src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80"
+            alt="Hotel Room">
+
+        <img
+            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=80"
+            alt="Swimming Pool">
+
+        <img
+            src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=900&q=80"
+            alt="Bedroom">
+
+        <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+            alt="Hotel Interior">
+
+        <img
+            src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=900&q=80"
+            alt="Luxury Room">
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section light">
+
+    <div class="about">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=80"
+                alt="Grand Horizon Hotel">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="gold-text">
+                ABOUT GRAND HORIZON
+            </p>
+
+            <h2>
+                A Place Where<br>
+                Luxury Meets Comfort
+            </h2>
+
+            <p>
+                Grand Horizon Hotel offers an elegant,
+                comfortable and memorable experience for
+                every guest.
+            </p>
+
+            <p>
+                From beautifully designed rooms to
+                excellent hospitality, we provide everything
+                you need for a relaxing stay.
+            </p>
+
+            <ul>
+                <li>✓ Modern and comfortable rooms</li>
+                <li>✓ 24/7 reception service</li>
+                <li>✓ Professional housekeeping</li>
+                <li>✓ Restaurant and wellness facilities</li>
+            </ul>
+
+            <a href="#booking" class="btn">
+                Reserve Your Room
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+
+<section id="booking" class="section booking-section">
+
+    <div class="section-heading">
+
+        <p>RESERVATION</p>
+
+        <h2>
+            Book Your Stay
+        </h2>
+
+        <span>
+            Complete the form below to make a booking request.
+        </span>
+
+    </div>
+
+
+    <div class="booking-box">
+
+        <form id="bookingForm">
+
+            <div class="form-grid">
+
+                <div>
+                    <label>Full Name *</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name">
+                </div>
+
+
+                <div>
+                    <label>Email *</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email">
+                </div>
+
+
+                <div>
+                    <label>Phone *</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="10 digit phone number">
+                </div>
+
+
+                <div>
+                    <label>Room Type *</label>
+
+                    <select id="room">
+
+                        <option value="">
+                            Select a room
+                        </option>
+
+                        <option>
+                            Deluxe Room
+                        </option>
+
+                        <option>
+                            Executive Room
+                        </option>
+
+                        <option>
+                            Luxury Suite
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+                    <label>Check-in *</label>
+
+                    <input
+                        type="date"
+                        id="checkin">
+                </div>
+
+
+                <div>
+                    <label>Check-out *</label>
+
+                    <input
+                        type="date"
+                        id="checkout">
+                </div>
+
+
+                <div>
+                    <label>Guests *</label>
+
+                    <select id="guests">
+
+                        <option value="">
+                            Select guests
+                        </option>
+
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6 Guests</option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+                    <label>Special Request</label>
+
+                    <input
+                        type="text"
+                        id="request"
+                        placeholder="Optional">
+                </div>
+
+
+                <div class="full">
+
+                    <button
+                        type="submit"
+                        class="btn">
+                        Confirm Booking
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div id="bookingMessage"></div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section">
+
+    <div class="section-heading">
+
+        <p>CONTACT US</p>
+
+        <h2>
+            Get In Touch
+        </h2>
+
+    </div>
+
+
+    <div class="contact">
+
+        <div class="contact-info">
+
+            <h2>
+                Grand Horizon Hotel
+            </h2>
+
+            <div>
+                <h4>📍 Address</h4>
+
+                <p>
+                    123 Luxury Avenue, Pune,
+                    Maharashtra, India
+                </p>
+            </div>
+
+
+            <div>
+                <h4>📞 Phone</h4>
+
+                <p>
+                    +91 98765 43210
+                </p>
+            </div>
+
+
+            <div>
+                <h4>✉ Email</h4>
+
+                <p>
+                    info@grandhorizon.com
+                </p>
+            </div>
+
+
+            <div>
+                <h4>🕐 Reception</h4>
+
+                <p>
+                    Open 24 hours
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="contact-form">
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Your Name">
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="Your Email">
+
+                <textarea
+                    id="contactMessage"
+                    placeholder="Your Message">
+                </textarea>
+
+                <button
+                    type="submit"
+                    class="btn">
+                    Send Message
+                </button>
+
+                <p id="contactMessageResult"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>
+        Grand Horizon
+    </h2>
+
+    <p>
+        Luxury • Comfort • Hospitality
+    </p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p>
+        © 2026 Grand Horizon Hotel. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
